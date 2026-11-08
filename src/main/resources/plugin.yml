@@ -1,0 +1,19 @@
+name: ApocalypseMissions
+version: 1.0.0
+main: com.enderdevelopment.plugin.Main
+api-version: "1.21"
+author: EnderDevelopment
+description: Automatically generated zombie apocalypse missions with mod-aware objectives.
+commands:
+  missions:
+    description: View and manage your apocalypse missions.
+    usage: /missions [list|claim|refresh]
+    aliases: [mission]
+    permission: apocalypsemissions.use
+permissions:
+  apocalypsemissions.use:
+    description: Allows use of the missions command.
+    default: true
+  apocalypsemissions.admin:
+    description: Allows refreshing all player missions.
+    default: op

@@ -1,0 +1,43 @@
+# Every generated mission is tied to one of these mod integrations.
+missions-per-player: 3
+mission-refresh-hours: 24
+reward-experience: 25
+
+mod-objectives:
+  tacz: "TACZ: eliminate infected targets using a TACZ firearm."
+  lrtactical: "LRTactical: collect tactical equipment from infected supply sites."
+  marbled-arsenal-legacy: "Marbled's Arsenal Legacy: eliminate infected using one of its weapons."
+  tough-as-nails: "Tough As Nails: collect survival supplies for hydration and temperature management."
+
+# Reward items are vanilla materials representing mod-themed supply caches.
+# Change each material to a valid Bukkit Material available on the server.
+loot-by-mod:
+  tacz:
+    label: "TACZ ammunition cache"
+    material: IRON_NUGGET
+    amount: 12
+  lrtactical:
+    label: "LRTactical field kit"
+    material: CROSSBOW
+    amount: 1
+  marbled-arsenal-legacy:
+    label: "Marbled arsenal parts"
+    material: IRON_INGOT
+    amount: 6
+  tough-as-nails:
+    label: "Tough As Nails survival ration"
+    material: COOKED_BEEF
+    amount: 4
+
+# Exact registry IDs from the installed mod versions.
+# Replace these example entries with IDs copied from the server's item registry.
+# The plugin matches the complete namespace:item key.
+item-matches:
+  tacz:
+    - "tacz:example_item"
+  lrtactical:
+    - "lrtactical:example_item"
+  marbled-arsenal-legacy:
+    - "marbled_arsenal_legacy:example_item"
+  tough-as-nails:
+    - "toughasnails:example_item"
